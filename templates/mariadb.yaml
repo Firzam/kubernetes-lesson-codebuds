@@ -30,12 +30,12 @@ spec:
           name: maria-db
           resources: {}
           env:
-            - name: MYSQL_ROOT_PASSWORD
+            - name: MARIADB_ROOT_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: mariadb-secret
                   key: rootPassword
-            - name: MYSQL_DATABASE
+            - name: MARIADB_DATABASE
               valueFrom:
                 secretKeyRef:
                   name: mariadb-secret
@@ -45,7 +45,7 @@ spec:
                 secretKeyRef:
                   name: mariadb-secret
                   key: user
-            - name: MYSQL_PASSWOD
+            - name: MYSQL_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: mariadb-secret

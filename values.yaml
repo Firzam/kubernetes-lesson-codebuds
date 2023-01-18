@@ -23,16 +23,16 @@ pvcwebserver:
 
 servicewebserver:
   name: deno-webserver
-  port: 8080
-  targetPort: http
+  port: 80
+  targetPort: 8080
   type: NodePort
 
 mariadb:
   auth:
     user: dGVzdAo=
-    password: dGVzdAo=
-    database: bG9ncwo=
-    rootPassword: YXNlY3JldAo=
+    password: YXNlY3JldA==
+    database: bG9ncw==
+    rootPassword: YXNlY3JldA==
   image:
     repository: mariadb
     pullPolicy: Always
